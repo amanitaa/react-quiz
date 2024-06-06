@@ -11,9 +11,10 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h1>Home Page</h1>
-      <img src="https://via.placeholder.com/600x400" alt="Hero" className="hero-image" />
-      <button onClick={handleGalleryRedirect} className="gallery-button">Go To Gallery</button>
+      <div className="hero-container">
+        <img src="https://via.placeholder.com/1600x900" alt="Hero" className="hero-image" />
+        <button onClick={handleGalleryRedirect} className="gallery-button">Go To Gallery</button>
+      </div>
     </div>
   );
 };
