@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Gallery.css';
 
 const Gallery = () => {
   const [photos, setPhotos] = useState([]);
@@ -11,11 +12,11 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div>
+    <div className="gallery">
       <h1>Gallery</h1>
-      <div>
+      <div className="photo-grid">
         {photos.map(photo => (
-          <div key={photo.id}>
+          <div key={photo.id} className="photo-item">
             <img src={photo.thumbnailUrl} alt={photo.title} />
             <p>{photo.title}</p>
           </div>

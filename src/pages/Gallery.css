@@ -1,0 +1,25 @@
+.gallery {
+    text-align: center;
+}
+  
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.photo-item {
+    width: 150px;
+}
+  
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+}
+  
+.photo-item p {
+    text-align: center;
+    margin: 10px 0 0;
+}
+  
